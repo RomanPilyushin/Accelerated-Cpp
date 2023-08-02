@@ -43,8 +43,8 @@ int main()
 	}
 
 	// sort the grades
-	// sort(homework.begin(), homework.end());
-	sort(begin(homework), end(homework));
+	sort(homework.begin(), homework.end());
+	//sort(begin(homework), end(homework));
 
 	// compute the median homework grade
 	auto mid = size / 2;
