@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chapter05.cpp">
+    <ClCompile Include="fails_iters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ext_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pics_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,20 +1,41 @@
-// chapter05.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include <algorithm>
+#include <vector>
 #include <iostream>
+#include <string>
+
+#include "Student_info.h"
+#include "grade.h"
+
+//driver program for grade partitioning examples
+
+using std::cin;
+using std::cout;
+using std::endl;
+using std::sort;
+using std::string;
+using std::vector;
+using std::size_t;
+using std::max;
+
+vector<Student_info> extract_fails(vector<Student_info>& v);
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    vector<Student_info> vs;
+    Student_info s;
+    string::size_type maxlen = 0;
+    while (read(cin, s)) {
+        maxlen = max(maxlen, s.name.size());
+        vs.push_back(s);
+    }
+
+    sort(vs.begin(), vs.end(), compare);
+
+    vector<Student_info> fails = extract_fails(vs);
+
+    // for (vector<Student_info>::size_type i = 0; i < fails.size(); ++i)
+    // 	cout << fails[i].name << " " << grade(fails[i]) << endl;
+    for (auto fail : fails)
+        cout << fail.name << " " << grade(fail) << endl;
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
