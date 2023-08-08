@@ -24,5 +24,55 @@
     <ClCompile Include="pics_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fails_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fails_vec1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fails_vec2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="list_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="split_main2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="median.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="grade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Student_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="median.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
